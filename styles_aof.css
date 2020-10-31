@@ -1,0 +1,364 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+/* ************************FONTS***************************** */
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	color: #414042;
+}
+
+/* ************************FONTS***************************** */
+
+
+
+/* ************************HEADER***************************** */
+
+header {
+	background-image: url("images/aof-hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.desktop-menu {
+	display: none;
+}
+
+h1 {
+	margin: auto;
+	width: 60%;
+	max-width: 200px;
+  text-align: center;
+  padding: 15% 0 50% 0;
+	color: #ffffff;
+	font-size: 3.5rem;
+	letter-spacing: .5rem;
+}
+
+/* ************************HEADER***************************** */
+
+
+
+/* ************************MAIN***************************** */
+
+h2 {
+  color: #00a98f;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h3, article p {
+  color: #ffffff;
+}
+
+h3 {
+  padding-bottom: 5%;
+}
+
+main img {
+  width: 100%;
+}
+
+div.less-padding {
+  padding: 10% 0;
+  width: 80%;
+  margin: auto;
+}
+
+div.section-styles {
+  width: 80%;
+  margin: auto;
+}
+
+article {
+  background-color: #54bcd4;
+  padding: 10%;
+  margin: 2% 0 15% 0;
+}
+
+aside {
+  background-color: #414042;
+  color: #fbed21;
+  margin-top: 5%;
+  padding: 5%;
+}
+
+/* ************************MAIN***************************** */
+
+
+
+/* ************************FOOTER***************************** */
+
+footer {
+	width: 100%;
+	background-color: #414042;
+}
+
+.copyright {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 5%;
+}
+
+.footer-logo-address {
+	width: 80%;
+	margin: auto;
+	padding: 10% 0;
+}
+
+.footer-logo-address img {
+	padding: 0;
+}
+
+.logo {
+	max-width: 60px;
+	padding: 5% 0 0 5%;
+
+}
+
+footer h4 {
+	color: #54bcd4;
+	font-size: 1.5rem;
+	padding-left: 10px;
+	position: relative;
+	display: inline;
+}
+
+.footer-logo-address p {
+	padding-left: 75px;
+}
+
+footer p, footer h5 {
+	color: #ffffff;
+}
+
+.social-media {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 10%;
+}
+
+.social-media img {
+	max-width: 40px;
+	padding: 10px 10px 20px 0;
+}
+
+/* ************************FOOTER***************************** */
+
+
+
+/* ************************HAMBURGER MENU STYLES ***************************** */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#fbed21;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#fbed21;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#00a98f;  position:absolute; top: 45px; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block;    background:#54bcd4; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#ffffff;}
+.menu ul li a:hover {  color: #ffffff; text-decoration:none;}
+.menu a{text-decoration:none; color:#54bcd4;}
+.menu a:hover{text-decoration:none; color:#54bcd4;
+}
+/* ************************HAMBURGER MENU STYLES ***************************** */
+
+
+
+/* ************************START MIN-WIDTH 500PX MEDIA QUERY***************************** */
+
+@media (min-width: 500px) {
+
+	.menu, .hamburger, .cross {
+		display: none;
+	}
+
+	.desktop-menu {
+		display: block;
+		text-decoration: none;
+		width: 90%;
+		margin-top: 20px;
+		padding-left: 2%;
+	}
+
+	.desktop-menu li {
+		padding: 1%;
+	}
+
+	.desktop-flex {
+		display: flex;
+		padding: 3%;
+	}
+
+	nav ul {
+		list-style-type: none;
+	}
+
+	nav ul li {
+		display: inline;
+
+	}
+
+	nav ul li a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+
+	nav ul li a:hover {
+		color: #fbed21;
+		font-weight: bold;
+	}
+
+	h1 {
+		padding: 10% 0 40% 0;
+	}
+
+}
+
+/* ************************END MIN-WIDTH 500PX MEDIA QUERY***************************** */
+
+
+
+/* ************************START MIN-WIDTH 680PX MEDIA QUERY***************************** */
+@media (min-width: 680px) {
+
+	h1 {
+    padding: 5% 0 30% 0;
+	}
+
+	.desktop-menu {
+    font-size: 1.25rem;
+	}
+
+	.footer-logo-address {
+    width: 60%;
+    margin: auto;
+    padding: 10% 0;
+	}
+
+	.social-media {
+    width: 40%;
+    margin: auto;
+    padding: 10% 0;
+	}
+
+	.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding-left: 10%;
+	}
+
+}
+
+/* ************************END MIN-WIDTH 680PX MEDIA QUERY***************************** */
+
+
+
+/* ************************START MIN-WIDTH 825PX MEDIA QUERY***************************** */
+@media (min-width: 825px) {
+
+	h1 {
+		font-size: 4rem;
+		padding: 5% 0 25% 0;
+	}
+
+}
+
+/* ************************END MIN-WIDTH 825PX MEDIA QUERY***************************** */
+
+
+
+/* ************************START MIN-WIDTH 1200PX MEDIA QUERY***************************** */
+@media (min-width: 1200px) {
+
+	h1 {
+		padding: 5% 0 20% 0;
+	}
+
+	main {
+		max-width: 100%;
+	}
+
+	div.less-padding section p {
+		max-width: 1000px;
+		margin: auto;
+	}
+
+	div.section-styles {
+		margin-bottom: 20%;
+	}
+
+	main img, article {
+		width: 40%;
+		margin: auto;
+	}
+
+	main img {
+		max-width: 450px;
+	}
+
+	article {
+		padding: 5%;
+	}
+
+	.wrap-box-1, .wrap-box-2 {
+		max-width: 1500px;
+		margin: auto;
+		display: flex;
+		margin-bottom: 10%;
+	}
+
+	.wrap-box-2 {
+		flex-direction: row-reverse;
+	}
+
+	.footer-flex {
+    max-width: 1000px;
+	}
+
+}
+
+/* ************************END MIN-WIDTH 1200PX MEDIA QUERY***************************** */
